@@ -1,0 +1,102 @@
+{
+    "floorId": "1001",
+    "offices": [
+        {
+            "roomNumber": "101",
+            "Name": "Robotics and Automation Laboratory",
+            "Owner": "",
+            "resource": ""
+    },
+        {
+            "roomNumber": "110",
+            "Name": "The Boswell family Conference Room",
+            "Owner": "",
+            "resource": ""
+    },
+        {
+            "roomNumber": "115",
+            "Name": "The John A.SCHEPSL'65 Robotics Laboratory",
+            "Owner": "Gregg Vesendor",
+            "resource": ""
+    }
+  ]
+} {
+    "floorId": "1002",
+    "offices": [
+        {
+            "roomNumber": "215",
+            "Name": "Sensorimotor Control Labortary",
+            "Owner": "",
+            "resource": ""
+    },
+        {
+            "roomNumber": "210",
+            "Name": "The Shulman Family Office",
+            "Owner": "",
+            "resource": ""
+    },
+        {
+            "roomNumber": "212",
+            "Name": "",
+            "Owner": "Ramana Vinjamarz",
+            "resource": ""
+    },
+        {
+            "roomNumber": "201",
+            "Name": "PHD offices for BioMedical Department",
+            "Owner": "",
+            "resource": ""
+    }
+  ]
+} {
+    "floorId": "1102",
+    "offices": [
+        {
+            "roomNumber": "215",
+            "Name": "Sensorimotor Control Labortary",
+            "Owner": "",
+            "resource": ""
+    },
+        {
+            "roomNumber": "210",
+            "Name": "The Shulman Family Office",
+            "Owner": "",
+            "resource": ""
+    },
+        {
+            "roomNumber": "212",
+            "Name": "",
+            "Owner": "Ramana Vinjamarz",
+            "resource": ""
+    },
+        {
+            "roomNumber": "201",
+            "Name": "PHD offices for BioMedical Department",
+            "Owner": "",
+            "resource": ""
+    }
+  ]
+}
+{
+    "floorId": "1004",
+    "offices": [
+        {
+            "roomNumber": "419",
+            "Name": "Professor Vesendor's Office",
+            "Owner": "Gregg Vesendor",
+            "resource": "calendar.txt"
+    },
+        {
+            "roomNumber": "415",
+            "Name": "The Boswell family Conference Room",
+            "Owner": "",
+            "resource": ""
+    },
+        {
+            "roomNumber": "414",
+            "Name": "The John A.SCHEPSL'65 Robotics Laboratory",
+            "Owner": "Gregg Vesendor",
+            "resource": ""
+    }
+  ]
+} 

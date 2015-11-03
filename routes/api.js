@@ -6,7 +6,7 @@ var router = express.Router();
 // provide json data for web and android
 
 router.route('/buildings/:buildingId?')
-    .get(function (req, res) {
+    .get(function(req, res) {
         console.log('current path: ' + req.path);
         res.end('current path: ' + req.path);
     });
@@ -14,7 +14,7 @@ router.route('/buildings/:buildingId?')
 
 
 router.route('/buildings/:buildingId/floors/:floorId?')
-    .get(function (req, res) {
+    .get(function(req, res) {
         var buildingId = req.params.buildingId;
         var floorId = req.params.floorId;
 
@@ -30,8 +30,8 @@ router.route('/buildings/:buildingId/floors/:floorId?')
         };
 
         //collection,query,callbacks
-        DAO.quickFind('floors', query, function (docs) {
-            res.send(docs);
+        DAO.quickFind('floors', query, function(docs) {
+            res.send(JSON.stringify(docs));
         });
 
     });
@@ -44,20 +44,36 @@ router.route('/buildings/:buildingId/floors/:floorId/offices/:officeId?')
         res.end('current path: ' + req.path);
     });
 */
+
 router.route('/buildings/:buildingId/floors/:floorId/beacons/:beaconId?')
-    .get(function (req, res) {
+    .get(function(req, res) {
         var buildingId = req.params.buildingId;
         var floorId = req.params.floorId;
         var beaconId = req.params.beaconId;
 
         if (beaconId) {
+            /*
+
+
+
+
+
+            more to do here
+
+
+
+
+
+
+            */
+
 
         } else {
             var query = {
                 beaconGroupId: buildingId + '' + floorId
             };
             //collection,query,callbacks
-            DAO.quickFind('beacons', query, function (docs) {
+            DAO.quickFind('beacons', query, function(docs) {
                 //check the robustness of doing this
                 res.send(docs.substring(1, docs.length - 1));
             });

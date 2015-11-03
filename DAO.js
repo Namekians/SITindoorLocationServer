@@ -12,11 +12,11 @@ var DAO = {};
 
 DAO.quickFind = function quickFind(targetCollection, query, callback) {
 
-    db.collection(targetCollection).find(query).toArray(function (err, docs) {
+    db.collection(targetCollection).find(query).toArray(function(err, docs) {
         if (err) {
             throw err;
         }
-        callback(JSON.stringify(docs));
+        callback(docs);
         db.close();
     });
 
@@ -31,7 +31,7 @@ module.exports = DAO
 
 function query(db, targetCollection, query, fields) {
 
-    db.collection(targetCollection).find(query, fields).toArray(function (err, docs) {
+    db.collection(targetCollection).find(query, fields).toArray(function(err, docs) {
         if (err) {
             throw err;
         }
@@ -45,7 +45,7 @@ function insert(db, targetCollection, doc) {
 
     db.collection(targetCollection).c(doc, {
         w: 1
-    }, function (err, data) {
+    }, function(err, data) {
         if (err) {
             throw err;
         }
@@ -57,7 +57,7 @@ function insert(db, targetCollection, doc) {
 
 function update(db, targetCollection, query, newData) {
 
-    db.collection(targetCollection).update(query, newData, function (err) {
+    db.collection(targetCollection).update(query, newData, function(err) {
         if (err) {
             throw err;
         }
@@ -67,7 +67,7 @@ function update(db, targetCollection, query, newData) {
 }
 
 function remove(db, targetCollection, query) {
-    db.collection(targetCollection).remove(query, function (err) {
+    db.collection(targetCollection).remove(query, function(err) {
         if (err) {
             throw err;
         }
@@ -76,7 +76,7 @@ function remove(db, targetCollection, query) {
 }
 
 function count(db, targetCollection, query) {
-    db.collection(targetCollection).count(query, function (err, count) {
+    db.collection(targetCollection).count(query, function(err, count) {
         if (err) {
             throw err;
         }
@@ -86,7 +86,7 @@ function count(db, targetCollection, query) {
 }
 
 function aggregate(db, targetCollection, pipelines) {
-    db.collection(targetCollection).aggregate(pipelines).toArray(function (err, result) {
+    db.collection(targetCollection).aggregate(pipelines).toArray(function(err, result) {
         console.log(result[0].avg.toFixed(2));
         db.close();
     });
