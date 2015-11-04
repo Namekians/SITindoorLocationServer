@@ -22,6 +22,13 @@ DAO.quickFind = function quickFind(targetCollection, query, callback) {
 
 }
 
+DAO.promise = function() {
+
+
+
+
+}
+
 
 module.exports = DAO
 

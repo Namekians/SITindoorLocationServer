@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
-var DAO = require('../DAO')
+var DAO = require('../DAO');
+
+var fs = require('')
 
 router.route('/login')
     .all(function(req, res, next) {
@@ -29,7 +31,7 @@ router.route('/login')
 
 router.route('/upload')
     .post(function(req, res, next) {
-
+        res.send(req.body)
 
     });
 

@@ -68,6 +68,9 @@ router.route('/buildings/:buildingId/floors/:floorId/beacons/:beaconId?')
             */
 
 
+            res.redirect('/json/calendar.json')
+
+
         } else {
             var query = {
                 beaconGroupId: buildingId + '' + floorId
@@ -75,7 +78,8 @@ router.route('/buildings/:buildingId/floors/:floorId/beacons/:beaconId?')
             //collection,query,callbacks
             DAO.quickFind('beacons', query, function(docs) {
                 //check the robustness of doing this
-                res.send(docs.substring(1, docs.length - 1));
+                var jsonStr = JSON.stringify(docs);
+                res.send(jsonStr.substring(1, jsonStr.length - 1));
             });
         }
 
