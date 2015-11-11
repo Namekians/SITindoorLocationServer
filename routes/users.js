@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var DAO = require('../DAO');
 
-var fs = require('')
+var fs = require('fs')
 
 router.route('/login')
     .all(function(req, res, next) {
@@ -24,9 +24,7 @@ router.route('/login')
             } else {
                 res.redirect('/login.html ');
             }
-
         })
-
     });
 
 router.route('/upload')

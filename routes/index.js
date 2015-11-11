@@ -17,7 +17,31 @@ router.get('/', function(req, res, next) {
 router.route('/test')
     .all(function(req, res) {
 
+        var test = [{
+            content: 'this is a test message',
+            sender: 'Siri'
+        }, {
+            content: 'this is a test message2',
+            sender: 'Siri2'
+        }, {
+            content: 'this is a test message3',
+            sender: 'Siri3'
+        }];
+        res.send(JSON.stringify(test.map(function(o) {
+            o.date = Date.now();
+            return o;
+        })));
 
+
+    });
+
+
+
+router.route('/test2')
+    .all(function(req, res) {
+
+        var test = '234e32w424324';
+        res.send(JSON.stringify(test));
 
 
     });
