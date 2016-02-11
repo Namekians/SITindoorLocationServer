@@ -1,61 +1,69 @@
-{
-    "beaconGroupId": "1004",
-    "beacons": [
-        {
-            "beaconId": "1004415",
-            "coordinate": "[900,1000]",
-            "trigger": "true"
-    },
-        {
-            "beaconId": "1004416",
-            "coordinate": "[540,540]",
-            "trigger": "true"
-    },
-        {
-            "beaconId": "100417",
-            "coordinate": "[200,800]",
-            "trigger": "true"
-    },
-        {
-            "beaconId": "1004418",
-            "coordinate": "[990,700]",
-            "trigger": "true"
-    },
-        {
-            "beaconId": "1004419",
-            "coordinate": "[990,700]",
-            "trigger": "true"
-    }
-  ]
-}
-
-{
-    "beaconGroupId": "1001",
-    "beacons": [
-        {
-            "beaconId": "1004415",
-            "coordinate": "[900,1000]",
-            "trigger": "true"
-    },
-        {
-            "beaconId": "1004416",
-            "coordinate": "[540,540]",
-            "trigger": "true"
-    },
-        {
-            "beaconId": "100417",
-            "coordinate": "[200,800]",
-            "trigger": "true"
-    },
-        {
-            "beaconId": "1004418",
-            "coordinate": "[990,700]",
-            "trigger": "true"
-    },
-        {
-            "beaconId": "1004419",
-            "coordinate": "[990,700]",
-            "trigger": "true"
-    }
-  ]
+{  
+   "beaconGroupId":"1004",
+   "beacons":[  
+      {  
+         "beaconId":"1004415",
+         "coordinateX":"700",
+         "coordinateY":"710",
+         "trigger":"false"
+      },
+      {  
+         "beaconId":"1004416",
+         "coordinateX":"910",
+         "coordinateY":"580",
+         "trigger":"true"
+      },
+      {  
+         "beaconId":"1004417",
+         "coordinateX":"900",
+         "coordinateY":"500",
+         "trigger":"true"
+      },
+      {  
+         "beaconId":"1004418",
+         "coordinateX":"910",
+         "coordinateY":"280",
+         "trigger":"true"
+      },
+      {  
+         "beaconId":"1004419",
+         "coordinateX":"900",
+         "coordinateY":"280",
+         "trigger":"true"
+      }
+   ]
+}{  
+   "beaconGroupId":"1001",
+   "beacons":[  
+      {  
+         "beaconId":"1001115",
+         "coordinateX":"900",
+         "coordinateY":"1000",
+         "trigger":"true"
+      },
+      {  
+         "beaconId":"1001116",
+         "coordinateX":"900",
+         "coordinateY":"1000",
+         "trigger":"true"
+      },
+      {  
+         "beaconId":"1001117",
+         "coordinateX":"900",
+         "coordinateY":"1000",
+         "trigger":"true"
+      },
+      {  
+         "beaconId":"1001118",
+         "coordinateX":"900",
+         "coordinateY":"1000",
+         "trigger":"true"
+      },
+      {  
+         "beaconId":"1001119",
+         "coordinateX":"900",
+         "coordinateY":"1000",
+         "trigger":"true"
+      }
+   ]
 }

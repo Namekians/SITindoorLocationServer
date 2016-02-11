@@ -22,10 +22,14 @@ DAO.quickFind = function quickFind(targetCollection, query, callback) {
 
 }
 
-DAO.promise = function() {
-
-
-
+DAO.quickInsert = function quickInsert(targetCollection, query, doc, callback) {
+    db.collection(targetCollection).update(query, doc, function(err) {
+        if (err) {
+            throw err;
+        }
+        callback();
+        db.close();
+    });
 
 }
 

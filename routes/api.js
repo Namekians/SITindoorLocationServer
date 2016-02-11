@@ -121,9 +121,21 @@ router.route('/buildings/:buildingId/floors/:floorId/offices/:officeId/messages'
 
     })
     .post(function(req, res, next) {
-        console.log('somebody reach here')
-        console.log(req.body)
-        res.sendStatus(200);
+        var buildingId = req.params.buildingId,
+            floorId = req.params.floorId,
+            officeId = req.params.officeId;
+        console.log('somebody reach here');
+        console.log(req.body);
+        DAO.quickInsert('messages', {
+            messageGroupId: buildingId + '' + floorId + '' + officeId
+        }, {
+            $push: {
+                messages: req.body
+            }
+        }, function() {
+            res.sendStatus(200)
+        });
+
     });
 
 function StringtoHTML(value) {
