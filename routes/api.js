@@ -124,8 +124,7 @@ router.route('/buildings/:buildingId/floors/:floorId/offices/:officeId/messages'
         var buildingId = req.params.buildingId,
             floorId = req.params.floorId,
             officeId = req.params.officeId;
-        console.log('somebody reach here');
-        console.log(req.body);
+        //console.log(req.body);
         DAO.quickInsert('messages', {
             messageGroupId: buildingId + '' + floorId + '' + officeId
         }, {
